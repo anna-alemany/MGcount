@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ## APR-2021  Andrea Hita Ardiaca
 
 ## -- Modules import
@@ -72,7 +73,7 @@ def assign_rna_reads_hierarchically(infile, fcpath, tmppath, crounds, end, stran
         if not os.path.isfile(os.path.join(tmppath, sn + '_alignment.bam.featureCounts')):
             sys.exit('READ ASSIGNATION FAILED. Please check that:\n'
                      '1. The gtf contains the required non-empty fields as defined by the '
-                     'assignation arguments "feature", "feature_output" & "feature_biotype'
+                     'assignation arguments "feature", "feature_output" & "feature_biotype\n'
                      '2. featureCounts is available on the path specified by '
                      '--featureCounts_path argument (default: /user/bin/featureCounts)\n'
                      '3. Input bam files are not empty or corrupted')
